@@ -1545,7 +1545,9 @@ window.SubscriptionsSmartQuery = (function () {
       ? `<div class="dpr-chat-result-block">
            <div class="dpr-modal-group-title">关键词（用于召回）</div>
            <div class="dpr-chat-slot-area ${hasKeywords ? 'has-candidates' : 'draft-only'}">
-             <div class="dpr-cloud-grid dpr-cloud-grid-keywords">${kwHtml}</div>
+             <div class="dpr-chat-slot-scroll">
+               <div class="dpr-cloud-grid dpr-cloud-grid-keywords">${kwHtml}</div>
+             </div>
            </div>
          </div>`
       : '';
@@ -1553,7 +1555,9 @@ window.SubscriptionsSmartQuery = (function () {
       ? `<div class="dpr-chat-result-block">
            <div class="dpr-modal-group-title">意图Query（用于意图召回与最终打分）</div>
            <div class="dpr-chat-slot-area ${hasIntentQueries ? 'has-candidates' : 'draft-only'}">
-             <div class="dpr-cloud-grid dpr-cloud-grid-intent">${intentHtml}</div>
+             <div class="dpr-chat-slot-scroll">
+               <div class="dpr-cloud-grid dpr-cloud-grid-intent">${intentHtml}</div>
+             </div>
            </div>
          </div>`
       : '';

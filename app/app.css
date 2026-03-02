@@ -3579,6 +3579,12 @@ article.markdown-section {
   background: #fbfdff;
 }
 
+.dpr-chat-slot-scroll {
+  max-height: 196px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .dpr-chat-slot-area.draft-only {
   width: 33.333%;
   max-width: 420px;
